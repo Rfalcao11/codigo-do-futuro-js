@@ -1,0 +1,41 @@
+<script>
+
+
+nome = prompt("Digite seu nome: ");
+valor = prompt("Digite o valor que você possui: ");
+viagem = prompt("Digite a viagem que você deseja: ");
+
+switch (viagem){
+	case 'Disney':
+	    if (valor >= 15000){
+	    alert("Parabens, voce pode conhecer o Mickey!")
+	    }else {
+	    valor = 15000-valor;
+	    alert("Voce não pode viajar pra esse lugar ainda te faltam R$" + valor)	    }
+	    break;
+	case 'Madrid':
+	    if (valor >= 12000){
+	    alert("Parabens, voce pode conhecer esse lugar!")
+	    }else {
+	    valor = 12000-valor;
+	    alert("Voce não pode viajar pra esse lugar ainda te faltam R$" + valor)	    }
+	    break;
+	case 'Maceio':
+	    if (valor >= 8000){
+	    alert("Parabens, voce pode conhecer esse lugar")
+	    }else {
+	    valor = 8000-valor;
+	    alert("Voce não pode viajar pra esse lugar ainda te faltam R$" + valor)	    }
+	    break;
+	case 'Ribeirao Preto':
+        if (valor >= 5000){
+	    alert("Parabens, voce pode conhecer esse lugar!")
+	    }else {
+	    valor = 5000-valor;
+	    alert("Voce não pode viajar pra esse lugar ainda te faltam R$" + valor)	    }
+	    break;
+}
+
+
+
+</script>
