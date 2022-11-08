@@ -3,36 +3,39 @@
 
 nome = prompt("Digite seu nome: ");
 valor = parseFloat(prompt("Digite o valor que você possui: "));
-viagem = prompt("Digite a viagem que você deseja: ");
-
+viagem = prompt(`Digite o numero da viagem que você deseja:
+    1 - Disney
+    2 - Madrid 
+    3 - Maceio
+    4 - Ribeirao preto`)
 switch (viagem){
-	case 'Disney':
+	case '1':
 	    if (valor >= 15000){
-	    alert("Parabens, voce pode conhecer o Mickey!")
+	    alert(`Parabens, ${nome} voce pode conhecer o Mickey!`)
 	    }else {
 	    valor = 15000-valor;
-	    alert("Voce não pode viajar pra esse lugar ainda te faltam R$" + valor)	    }
+	    alert(`Que pena ${nome}, infelizmente você ainda não pode viajar para Disney, te faltam R$ ${valor}!`)	    }
 	    break;
-	case 'Madrid':
+	case '2':
 	    if (valor >= 12000){
-	    alert("Parabens, voce pode conhecer esse lugar!")
+	    alert(`Parabens, ${nome} voce pode conhecer esse lugar!`)
 	    }else {
 	    valor = 12000-valor;
-	    alert("Voce não pode viajar pra esse lugar ainda te faltam R$" + valor)	    }
+	    alert(`Que pena ${nome}, infelizmente você ainda não pode viajar para Madrid, te faltam R$ ${valor}!`)	    }
 	    break;
-	case 'Maceio':
+	case '3':
 	    if (valor >= 8000){
-	    alert("Parabens, voce pode conhecer esse lugar")
+	    alert(`Parabens, ${nome} voce pode conhecer esse lugar!`)
 	    }else {
 	    valor = 8000-valor;
-	    alert("Voce não pode viajar pra esse lugar ainda te faltam R$" + valor)	    }
+	    alert(`Que pena ${nome}, infelizmente você ainda não pode viajar para Maceió, te faltam R$ ${valor}!`)	    }
 	    break;
-	case 'Ribeirao Preto':
+	case '4':
         if (valor >= 5000){
-	    alert("Parabens, voce pode conhecer esse lugar!")
+	    alert(`Parabens, ${nome} voce pode conhecer esse lugar!`)
 	    }else {
 	    valor = 5000-valor;
-	    alert("Voce não pode viajar pra esse lugar ainda te faltam R$" + valor)	    }
+	    alert(`Que pena ${nome}, infelizmente você ainda não pode viajar para Ribeirão Preto, te faltam R$ ${valor}!`)	    }
 	    break;
 }
 
